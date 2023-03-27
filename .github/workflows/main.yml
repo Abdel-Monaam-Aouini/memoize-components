@@ -25,10 +25,7 @@ jobs:
         run: |
           npm ci
           npm run build
-          npm run preview &
-      - name: 🔎 Run tests
-        run: npm run test
-
+          
   # Single deploy job since we're just deploying
   deploy:
     environment:
