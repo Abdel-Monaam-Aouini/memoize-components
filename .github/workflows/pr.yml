@@ -15,11 +15,8 @@ on:
 permissions:
   contents: read
   pull-requests: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
+  pages: write
+  id-token: write
 
 jobs:
   set-automerge:
